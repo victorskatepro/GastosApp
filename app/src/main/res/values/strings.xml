@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GastosApp</string>
+    <string name="main_contabilidad_de_ingresos_egresos">Contabilidad de Ingresos / Egresos</string>
+    <string name="main_proporcion_ingresos_egresos">Proporcion Ingresos/Egresos</string>
+    <string name="registro_titulo">Registrar Ingresos/Egresos</string>
+    <string name="registro_monto">Monto</string>
+    <string name="registro_tipo_de_cuenta">Tipo de Cuenta</string>
+    <string name="registrar_txtbutton_registrar">Registrar</string>
+    <string name="txt_main_saldoinicial_0">0</string>
+    <string name="simbologiasoles_main_s">S/:</string>
+    <string-array name="android_tipocuenta_arrays">
+        <item>Tarjeta de Credito</item>
+        <item>Ahorro</item>
+        <item>Efectivo</item>
+    </string-array>
+</resources>

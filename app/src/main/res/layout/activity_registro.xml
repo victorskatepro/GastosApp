@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_padding_16dp"
+    tools:context="com.victorsaico.gastosapp.Activities.RegistroActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registro_titulo"
+        android:textSize="@dimen/main_titulo_20sp"
+        android:textColor="@color/primary_text"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_margintop"
+        android:id="@+id/edtmonto"
+        android:inputType="number"
+        android:hint="@string/registro_monto"/>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/main_margintop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonIngreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="radiotipoclick"
+            android:paddingLeft="@dimen/registro_radio_paddingleft_10dp"
+            android:text="Ingreso" />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/registro_radio_paddingleft_10dp"
+            android:onClick="radiotipoclick"
+            android:id="@+id/radioButtonEgreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Egreso"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="@dimen/main_margintop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registro_tipo_de_cuenta"/>
+    <Spinner
+        android:id="@+id/spinnertipocuenta"
+        android:layout_width="match_parent"
+        android:entries="@array/android_tipocuenta_arrays"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="@dimen/main_margintop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="montototal"
+        android:text="@string/registrar_txtbutton_registrar"/>
+
+
+</LinearLayout>
